@@ -34,8 +34,8 @@ def main():
     table.setEditTriggers(QAbstractItemView.NoEditTriggers)
     table.viewOptions()
     table.verticalHeader().setResizeMode(2)
-
-    table.setWindowTitle("Ludeon Forum Browser [Development Build]")
+    table.setWindowIcon(QIcon(os.path.join(os.getcwd(),'icon.png')))
+    table.setWindowTitle("OwO What's This?")
     table.resize(700, 800)
     table.setRowCount(len(ourdump))
     table.setColumnCount(3)
@@ -45,7 +45,6 @@ def main():
         table.setItem(rowwork, 1, QTableWidgetItem(y['url']))
         table.setItem(rowwork, 2, QTableWidgetItem(y['version']))
         rowwork += 1
-
     table.setSortingEnabled(True)
     table.show()
     return app.exec_()
