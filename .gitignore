@@ -117,9 +117,5 @@ pyvenv.cfg
 pip-selfcheck.json
 .gitignore
 .idea/
-Client.py
-LudeonDump-[2018-03-01] [01h-43m-46s-PM].json
 Scrapper.py
-drive-python-quickstart.json
-drive.py
 ludeonhadler.py
